@@ -1,0 +1,215 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0b1c2d;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b1c2d; /* Dark Navy */
+  color: white;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar nav a {
+  color: #d1d5db;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #f97316; /* Safety Orange */
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  height: 100vh;
+  background: url("./")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(11, 28, 45, 0.8);
+  color: white;
+  padding: 60px;
+  text-align: center;
+  max-width: 720px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.primary-btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #f97316;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #ea580c;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+  padding: 120px 60px 80px;
+  background: #0b1c2d;
+  color: white;
+  text-align: center;
+}
+
+.section.light {
+  background: #f1f5f9;
+  color: #0b1c2d;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   CARDS
+========================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  color: #0b1c2d;
+  padding: 30px;
+  width: 280px;
+  border-radius: 6px;
+  text-align: left;
+  border-left: 5px solid #f97316;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   LINKS INSIDE CARDS
+========================= */
+.card a {
+  color: #f97316;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #020617;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .navbar nav a {
+    margin-left: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay {
+    padding: 40px 25px;
+  }
+
+  .section {
+    padding: 100px 25px 60px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+}
