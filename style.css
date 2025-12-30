@@ -36,9 +36,13 @@ body {
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  height: 60px;
+  width:60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar nav a {
