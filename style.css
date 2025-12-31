@@ -36,10 +36,10 @@ body {
 }
 
 .logo {
-  height: 60px;
-  width:60px;
+  height: 40px;
+  width:160px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,7 @@ body {
 ========================= */
 .hero {
   height: 100vh;
-  background: url("./closeup-red-fire-extinguishers.jpg") center/cover no-repeat;
+  background: url("./closeup-red-fire-extinguishers\ \ c.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
